@@ -1,6 +1,14 @@
 <!doctype html>
+
 <html lang="en">
   <head>
+  <script type="text/javascript">
+  function isvaliduser(){
+	
+	  
+  }
+  
+  </script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,6 +19,9 @@
     <title>Home Page</title>
   </head>
   <body>
+  
+ 
+  
     
     
    
@@ -27,6 +38,10 @@
   </li>
 </ul>
 
+
+<%
+out.print(request.getAttribute("output"));
+%>
 
 
 
@@ -48,7 +63,7 @@
 			            
 			<div class="form-group">
 	        <label for="exampleInputPassword1" >Password</label>
-			<input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required type="password" class="form-control" id="userpwd"  name="userpwd" placeholder="Password">
+			<input  required type="password" class="form-control" id="userpwd"  name="userpwd" placeholder="Password">
 			
 			</div>
 
@@ -59,7 +74,7 @@
 			            
 			<div class="text-center">
 				               
-				<button type="submit" class="btn btn-primary"  >Submit</button>
+				<button type="submit" class="btn btn-primary" onclick="isvaliduser()" >Submit</button>
 			</div>
 			        
 		</form>
